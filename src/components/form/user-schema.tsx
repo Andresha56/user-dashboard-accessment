@@ -3,17 +3,26 @@ import { z } from "zod";
 export const userSchema = z.object({
     id: z.number().optional(),
     firstName: z
-        .string()
+        .string({
+            error: "First name is required",
+        })
         .min(1, "First name is required"),
 
     lastName: z
-        .string()
+        .string({
+            error: "Last name is required",
+        })
         .min(1, "Last name is required"),
 
-    email: z.email("Invalid email address"),
+    email: z.string({
+            error: "Email is required",
+        })
+        .email("Invalid email address"),
 
     phone: z
-        .string()
+        .string({
+            error: "Phone is required",
+        })
         .min(1, "Phone is required"),
 
     age: z
@@ -23,11 +32,15 @@ export const userSchema = z.object({
         .min(1, "Invalid age"),
 
     gender: z
-        .string()
+        .string({
+            error: "Gender is required",
+        })
         .min(1, "Gender is required"),
 
     role: z
-        .string()
+        .string({
+            error: "Role is required",
+        })
         .min(1, "Role is required"),
 
     image: z.url().optional().or(z.literal("")),

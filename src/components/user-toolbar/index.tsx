@@ -131,7 +131,7 @@ export const UsersToolbar: FC<Props> = ({
                 {/* Filters Section */}
                 <div
                     className={`
-                        mt-6 overflow-hidden rounded-3xl border border-slate-200
+                        mt-6  rounded-3xl border border-slate-200
                         bg-white p-4 shadow-sm transition-all duration-300 sm:p-5
                         ${showFilters ? "block" : "hidden"}
                         lg:block

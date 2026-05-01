@@ -6,6 +6,7 @@ import { addUser, fetchUsers, deleteUser } from "@queries";
 import type { User } from "@archetypes/user";
 
 import { UserTable } from "@components/response-table";
+import { TableSkeleton } from "@components/table-skeleton";
 import { UsersToolbar } from "@components/user-toolbar";
 import { UserAddEditDialog } from "@dialog/user-add-edit-dialog";
 import { Pagination } from "@components/pagination";
@@ -90,6 +91,19 @@ export const UsersList: FC = () => {
    };
 
    const handleDeleteUser = async (id: number) => {
+      const isServerUser = usersData.some((user) => user.id === id);
+
+      if (!isServerUser) {
+         setLocalUsers((prev) => prev.filter((user) => user.id !== id));
+         setTotalRecords((prev) => Math.max(0, prev - 1));
+         showToast({
+            variant: "success",
+            title: "Delete",
+            content: "User deleted successfully.",
+         });
+         return;
+      }
+
       try {
          await deleteUser(id);
          setUsersData((prev) => prev.filter((user) => user.id !== id));
@@ -195,15 +209,7 @@ export const UsersList: FC = () => {
                />
 
                {loading ? (
-                   <div className="rounded-2xl border border-slate-200 bg-white py-32 flex items-center justify-center">
-                       <div className="flex flex-col items-center gap-3">
-                           <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-slate-200 border-t-indigo-600" />
-
-                           <p className="text-sm text-slate-400">
-                               Loading users...
-                           </p>
-                       </div>
-                   </div>
+                   <TableSkeleton />
                ) : error ? (
                    <div className="rounded-2xl border border-red-200 bg-red-50 py-16 px-4 flex flex-col items-center text-center">
                        <p className="font-medium text-red-700">{error}</p>
