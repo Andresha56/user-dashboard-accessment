@@ -34,11 +34,17 @@ Frontend Developer assessment project built with React, TypeScript, Vite, Tailwi
 
 ## Features
 
-* User listing with search and pagination
-* Add / edit user modal form
+* User listing with search, filtering, sorting, and pagination
+* Search users by first name, last name, and email
+* Filter users by role and gender
+* Sort users by name and age
+* Add and edit user modal form
 * Form validation using Zod and React Hook Form
-* Reusable UI components and hooks
-* Responsive design for desktop and mobile
+* Toast notifications
+* Skeleton loading states
+* Sticky table header
+* Fully responsive design for desktop and mobile
+* Reusable UI components and custom hooks
 * Fast development experience with Vite
 
 ---
