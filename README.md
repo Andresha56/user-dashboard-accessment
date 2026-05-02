@@ -4,66 +4,104 @@ Frontend Developer assessment project built with React, TypeScript, Vite, Tailwi
 
 ## Live Demo
 
-[https://user-dashboard-accessment.vercel.app/](https://user-dashboard-accessment.vercel.app/)
+🔗 https://user-dashboard-accessment.vercel.app/
 
 ---
 
 ## Screenshots
 
-### Desktop View
+## Desktop View
 
-#### User Listing
-![Modal](https://github.com/user-attachments/assets/80987c2f-a3ef-433c-8dbf-a03a7b5579c0)
+### User Listing
 
+<p align="center">
+  <img width="100%" alt="User Listing"
+    src="https://github.com/user-attachments/assets/bc9d1020-49e7-40d2-8a85-f5cd0933eb0f" />
+</p>
 
-#### User Details
+<p align="center">
+  <img width="100%" alt="User Listing 2"
+    src="https://github.com/user-attachments/assets/54cfa011-db53-4eec-8d90-5a9e96e30b6d" />
+</p>
 
-![Dashboard](https://github.com/user-attachments/assets/51c4ed59-058d-4532-bf54-122ef7897270)
+---
 
-#### Add / Edit User Modal
-![User Details](https://github.com/user-attachments/assets/a4b33667-57b9-4fe9-8836-d9c6e61678a8)
+### Search User
 
+<p align="center">
+  <img width="100%" alt="Search User"
+    src="https://github.com/user-attachments/assets/15ff899d-70a8-4b44-87ee-84c49f1f48f7" />
+</p>
 
-### Mobile Responsive Views
+---
 
-| Home Page                                                                            | User Details                                                                         | Modal                                                                                |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| ![](https://github.com/user-attachments/assets/e4c143f6-6483-45aa-8cb4-094224ee68f6) | ![](https://github.com/user-attachments/assets/bf0539ed-c123-4c79-8786-3facea087fab) | ![](https://github.com/user-attachments/assets/0dc7ac1d-b58a-4458-89e8-25a63f9a456c) |
+### User Not Found State
+
+<p align="center">
+  <img width="100%" alt="User Not Found"
+    src="https://github.com/user-attachments/assets/255488a3-286a-42c6-9881-b934abcf183c" />
+</p>
+
+---
+
+### User Details Page
+
+<p align="center">
+  <img width="100%" alt="User Details"
+    src="https://github.com/user-attachments/assets/51c4ed59-058d-4532-bf54-122ef7897270" />
+</p>
+
+---
+
+### Add / Edit User Modal
+
+<p align="center">
+  <img width="100%" alt="Add Edit Modal"
+    src="https://github.com/user-attachments/assets/a4b33667-57b9-4fe9-8836-d9c6e61678a8" />
+</p>
+
+---
+
+## Mobile Responsive Views
+
+| Home Page | User Details | Modal |
+|---|---|---|
+| <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 27" src="https://github.com/user-attachments/assets/da87f8de-da60-491e-b8a8-388dd556bbdf" />| <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 29" src="https://github.com/user-attachments/assets/b8d71c12-5bd5-4bfd-9637-0a9b1fb0d498" /> | <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/808f0113-8ebd-46f2-93bd-e851facc2e00" /> | <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/2fa3b3a8-fbee-496d-9f4e-4cd1696e2cc0" />
 
 ---
 
 ## Features
 
-* User listing with search, filtering, sorting, and pagination
-* Search users by first name, last name, and email
-* Filter users by role and gender
-* Sort users by name and age
-* Add and edit user modal form
-* Form validation using Zod and React Hook Form
-* Toast notifications
-* Skeleton loading states
-* Sticky table header
-* Fully responsive design for desktop and mobile
-* Reusable UI components and custom hooks
-* Fast development experience with Vite
+- User listing with search, filtering, sorting, and pagination
+- Search users by first name, last name, and email
+- Filter users by role and gender
+- Sort users by name and age
+- Add and edit user modal form
+- Form validation using Zod and React Hook Form
+- Toast notifications
+- Skeleton loading states
+- Sticky table header
+- Fully responsive design for desktop and mobile
+- Reusable UI components and custom hooks
+- Fast development experience with Vite
 
 ---
 
 ## Tech Stack
 
-* React 19
-* TypeScript
-* Vite
-* Tailwind CSS
-* React Hook Form
-* Zod
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Hook Form
+- Zod
 
 ---
 
 ## Requirements
 
-* Node.js 20+
-* npm 10+ (or compatible package manager)
+- Node.js 20+
+- npm 10+ (or compatible package manager)
 
 ---
 
@@ -118,12 +156,12 @@ npm run preview
 
 ## Available Scripts
 
-| Command           | Description              |
-| ----------------- | ------------------------ |
-| `npm run dev`     | Start development server |
-| `npm run build`   | Build for production     |
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
 | `npm run preview` | Preview production build |
-| `npm run lint`    | Run ESLint               |
+| `npm run lint` | Run ESLint |
 
 ---
 
@@ -137,7 +175,7 @@ src/
  ├── dialog/       # Modal dialogs
  ├── context/      # Context providers
  ├── queries/      # API/query logic
- └── archetypes/        # TypeScript types
+ └── archetypes/   # TypeScript types
 ```
 
 ---
