@@ -27,15 +27,15 @@ const avatarColors = [
 ];
 
 const thClass =
-    "px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-slate-400 whitespace-nowrap";
+    "px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-slate-400 whitespace-nowrap ";
 
 const tdClass = "px-6 py-4 whitespace-nowrap text-sm text-slate-600";
 
 const actionBtn = {
     base: "rounded-lg px-3 py-1.5 text-xs font-medium ring-1 ring-inset transition-colors",
-    view: "text-slate-600 ring-slate-200 hover:bg-slate-50",
-    edit: "text-indigo-600 ring-indigo-200 hover:bg-indigo-50",
-    delete: "text-red-600 ring-red-200 hover:bg-red-50",
+    view: "text-slate-600 ring-slate-200 hover:bg-slate-50 cursor-pointer",
+    edit: "text-indigo-600 ring-indigo-200 hover:bg-indigo-50 cursor-pointer",
+    delete: "text-red-600 ring-red-200 hover:bg-red-50 cursor-pointer",
 };
 
 const getInitials = (first: string, last: string) =>
