@@ -1,3 +1,4 @@
+import { Button } from "@components/button";
 import { CloseIcon } from "@icons";
 import type { FC, ReactNode } from "react";
 
@@ -53,24 +54,16 @@ export const Modal: FC<ModalProps> = ({
                         {title}
                     </h2>
 
-                    <button
+                    <Button
+                        variant="secondary"
+                        className="flex h-8 w-8 items-center justify-center rounded-lg transition-colors hover:bg-gray-100"
                         onClick={onClose}
-                        className="
-                     flex h-10 w-10 items-center justify-center
-                     rounded-full
-                     text-gray-500
-                     transition-colors
-                     hover:bg-gray-100
-                     hover:text-black
-                  "
                     >
-                        <CloseIcon size={12}/>
-                    </button>
+                        <CloseIcon size={12} />
+                    </Button>
                 </div>
 
-                <div className="p-6">
-                    {children}
-                </div>
+                <div className="p-6">{children}</div>
             </div>
         </div>
     );
