@@ -1,74 +1,141 @@
 # User Management Dashboard
 
-A responsive admin dashboard built with React, TypeScript, Vite, Tailwind CSS, React Hook Form, and Zod.
+Frontend Developer assessment project built with React, TypeScript, Vite, Tailwind CSS, React Hook Form, and Zod.
+
+## Live Demo
+
+[https://user-dashboard-accessment.vercel.app/](https://user-dashboard-accessment.vercel.app/)
+
+---
+
+## Screenshots
+
+### Desktop View
+
+#### User Listing
+![Modal](https://github.com/user-attachments/assets/80987c2f-a3ef-433c-8dbf-a03a7b5579c0)
+
+
+#### User Details
+
+![Dashboard](https://github.com/user-attachments/assets/51c4ed59-058d-4532-bf54-122ef7897270)
+
+#### Add / Edit User Modal
+![User Details](https://github.com/user-attachments/assets/a4b33667-57b9-4fe9-8836-d9c6e61678a8)
+
+
+### Mobile Responsive Views
+
+| Home Page                                                                            | User Details                                                                         | Modal                                                                                |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| ![](https://github.com/user-attachments/assets/e4c143f6-6483-45aa-8cb4-094224ee68f6) | ![](https://github.com/user-attachments/assets/bf0539ed-c123-4c79-8786-3facea087fab) | ![](https://github.com/user-attachments/assets/0dc7ac1d-b58a-4458-89e8-25a63f9a456c) |
+
+---
 
 ## Features
 
-- User listing with search and pagination
-- Add / edit user modal form
-- Form validation with Zod and React Hook Form
-- Reusable UI components and hooks
-- Fast development experience with Vite
+* User listing with search and pagination
+* Add / edit user modal form
+* Form validation using Zod and React Hook Form
+* Reusable UI components and hooks
+* Responsive design for desktop and mobile
+* Fast development experience with Vite
+
+---
+
+## Tech Stack
+
+* React 19
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Hook Form
+* Zod
+
+---
 
 ## Requirements
 
-- Node.js 20+ recommended
-- npm 10+ (or compatible package manager)
+* Node.js 20+
+* npm 10+ (or compatible package manager)
 
-## Setup
+---
 
-1. Clone the repository:
-   ```bash
-   git clone <repo-url>
-   cd user-management-dashboard
-   ```
+## Setup Instructions
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### 1. Clone the repository
 
-## Development
+```bash
+git clone <repo-url>
+cd user-management-dashboard
+```
 
-Start the local development server:
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run the Project
+
+### Start development server
 
 ```bash
 npm run dev
 ```
 
-Open the URL shown in the terminal (usually `http://localhost:5173`).
+Open the URL shown in the terminal:
+
+```bash
+http://localhost:5173
+```
+
+---
 
 ## Production Build
 
-Build the app for production:
+### Build the project
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+### Preview production build
 
 ```bash
 npm run preview
 ```
 
-## Scripts
+---
 
-- `npm run dev` — start the Vite development server
-- `npm run build` — compile TypeScript and build the production bundle
-- `npm run preview` — preview the production build locally
-- `npm run lint` — run ESLint on the project
+## Available Scripts
+
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
+| `npm run preview` | Preview production build |
+| `npm run lint`    | Run ESLint               |
+
+---
 
 ## Project Structure
 
-- `src/` — application source code
-- `src/components/` — reusable React components
-- `src/pages/` — page views such as user list and user details
-- `src/hooks/` — custom React hooks
-- `src/dialog/` — modal dialog components
-- `src/context/` — context providers (e.g. toast notifications)
-- `src/queries/` — data-fetching or query utilities
+```bash
+src/
+ â”œâ”€â”€ components/   # Reusable components
+ â”œâ”€â”€ pages/        # Application pages
+ â”œâ”€â”€ hooks/        # Custom hooks
+ â”œâ”€â”€ dialog/       # Modal dialogs
+ â”œâ”€â”€ context/      # Context providers
+ â”œâ”€â”€ queries/      # API/query logic
+ â””â”€â”€ archetypes/        # TypeScript types
+```
+
+---
 
 ## Notes
 
-This project uses React 19, Vite, TypeScript, and Tailwind CSS via `@tailwindcss/vite`.
+This project was created as part of a Frontend Developer assessment.
