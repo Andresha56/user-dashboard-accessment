@@ -66,7 +66,8 @@ Frontend Developer assessment project built with React, TypeScript, Vite, Tailwi
 
 | Home Page | User Details | Modal |
 |---|---|---|
-| <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 27" src="https://github.com/user-attachments/assets/da87f8de-da60-491e-b8a8-388dd556bbdf" />| <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 29" src="https://github.com/user-attachments/assets/b8d71c12-5bd5-4bfd-9637-0a9b1fb0d498" /> | <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/808f0113-8ebd-46f2-93bd-e851facc2e00" /> | <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/2fa3b3a8-fbee-496d-9f4e-4cd1696e2cc0" />
+| <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 27" src="https://github.com/user-attachments/assets/da87f8de-da60-491e-b8a8-388dd556bbdf" />|  <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/808f0113-8ebd-46f2-93bd-e851facc2e00" /> | <img width="720" height="1600" alt="WhatsApp Image 2026-05-02 at 10 30 28" src="https://github.com/user-attachments/assets/2fa3b3a8-fbee-496d-9f4e-4cd1696e2cc0" />
+
 
 ---
 
