@@ -9,7 +9,6 @@ import React, {
 
 import {
     CheckFillIcon,
-    CloseIcon,
     RemoveFillIcon,
 } from "@icons";
 
@@ -102,12 +101,13 @@ const ToastComponent: React.FC<ToastProps> = ({
 
                 <Button
                     onClick={closeToast}
+                    variant="secondary"
                     className="
                         flex h-8 w-8 items-center justify-center rounded-lg
                         transition-colors hover:bg-gray-100
                     "
                 >
-                    <CloseIcon color="#363636" size={14} />
+                   X
                 </Button>
             </div>
         </div>

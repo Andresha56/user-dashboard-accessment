@@ -54,7 +54,7 @@ const SearchBoxComponent: FC<SearchBoxProps> = ({
                     className="search-clear"
                     onClick={handleClear}
                 >
-                    <CloseIcon size={12} />
+                    <CloseIcon size={12} color="black"/>
                 </Button>
             )}
         </div>

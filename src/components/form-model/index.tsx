@@ -64,7 +64,7 @@ export const Modal: FC<ModalProps> = ({
                      hover:text-black
                   "
                     >
-                        <CloseIcon/>
+                        <CloseIcon size={12}/>
                     </button>
                 </div>
 
