@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# User Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive admin dashboard built with React, TypeScript, Vite, Tailwind CSS, React Hook Form, and Zod.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User listing with search and pagination
+- Add / edit user modal form
+- Form validation with Zod and React Hook Form
+- Reusable UI components and hooks
+- Fast development experience with Vite
 
-## React Compiler
+## Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 20+ recommended
+- npm 10+ (or compatible package manager)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd user-management-dashboard
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Development
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Start the local development server:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open the URL shown in the terminal (usually `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Production Build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Build the app for production:
+
+```bash
+npm run build
 ```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+- `npm run dev` — start the Vite development server
+- `npm run build` — compile TypeScript and build the production bundle
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint on the project
+
+## Project Structure
+
+- `src/` — application source code
+- `src/components/` — reusable React components
+- `src/pages/` — page views such as user list and user details
+- `src/hooks/` — custom React hooks
+- `src/dialog/` — modal dialog components
+- `src/context/` — context providers (e.g. toast notifications)
+- `src/queries/` — data-fetching or query utilities
+
+## Notes
+
+This project uses React 19, Vite, TypeScript, and Tailwind CSS via `@tailwindcss/vite`.
