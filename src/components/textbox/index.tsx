@@ -1,5 +1,4 @@
 import type { FC, ReactNode } from "react";
-import "./textbox.scss";
 
 interface TextboxProps {
     value: string;
@@ -23,10 +22,16 @@ export const Textbox: FC<TextboxProps> = ({
     };
 
     return (
-        <div className="textbox-wrapper">
-            <div className={`textbox-container ${errorMessage ? "error" : ""}`}>
-
-                {fieldIcon && <span className="textbox-icon">{fieldIcon}</span>}
+        <div className="w-full">
+            <div
+                className={`
+                    flex items-center rounded-md border bg-white px-3 py-2
+                    ${errorMessage ? "border-red-600" : "border-slate-300"}
+                `}
+            >
+                {fieldIcon && (
+                    <span className="mr-2 flex items-center">{fieldIcon}</span>
+                )}
 
                 <input
                     type="text"
@@ -34,12 +39,15 @@ export const Textbox: FC<TextboxProps> = ({
                     onKeyDown={onKeyDown}
                     onChange={onInputChange}
                     placeholder={placeholder}
-                    className="textbox-input"
+                    className="
+                        w-full border-none bg-transparent text-sm
+                        outline-none placeholder:text-slate-400
+                    "
                 />
             </div>
 
             {errorMessage && (
-                <p className="textbox-error">{errorMessage}</p>
+                <p className="mt-1 text-xs text-red-600">{errorMessage}</p>
             )}
         </div>
     );
